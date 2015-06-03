@@ -1,5 +1,7 @@
-# skel-tempalte
-This is a simple boilerplate for skel based projects.
+# skel-project
+This project uses Jade, Sass and CoffeeScript.
+
+This project is used internally for new web projects. This project is free for anyone to use
 
 
 
