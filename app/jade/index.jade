@@ -1,14 +1,32 @@
 doctype html
 html(lang="da")
   head
-    title testsoftware
-    script(src='js/jquery.js')
-    script(src='js/skel.js')
-    script(src='js/skel-layout.js')
-    script(src='js/skel-viewport.js')
-    script(src='js/app.js')
+    title New project
+    
+    link(href='/css/app.css', rel='stylesheet')
+
+    script(src='/js/jquery.js')
+    script(src='/js/skel.js')
+    script(src='/js/skel-layout.js')
+    script(src='/js/skel-viewport.js')
+    script(src='/js/app.js')
+
   body
-    header
-      h1 New Site its awesome
-    section
-    footer
+    header.container: .row
+      div(class="12u$"): h1 New Project
+    section.container: .row
+      div(class='4u 12u$(small)')
+        h2 Why?
+        p This project was created to make static HTML templating faster when creating a new web project for i3a.dk
+      div(class='4u 12u$(small)')
+        h2 Who?
+        p Anyone can use this project no strings attached.
+      div(class='4u$ 12u$(small)')
+        h2 How?
+        p Pull the project from gitHub and run "sudo grunt" int the terminal to create the dist folder
+
+    footer.container: .row
+      div(class="6u")
+        p Content
+      div(class="6u$")
+        p Content

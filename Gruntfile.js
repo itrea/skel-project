@@ -18,10 +18,6 @@ module.exports = function ( grunt )
         },
         files: {
           'dist/css/app.css'    : 'app/sass/app.sass',
-          'dist/css/small.css'  : 'app/sass/small.sass',
-          'dist/css/medium.css' : 'app/sass/medium.sass',
-          'dist/css/large.css'  : 'app/sass/large.sass',
-          'dist/css/xlarge.css' : 'app/sass/xlarge.sass'
         }
       }
     },
@@ -34,14 +30,12 @@ module.exports = function ( grunt )
     },
     bowercopy: {
       components: {
-        options: {
-          destPrefix : 'dist/js/'
-        },
         files: {
-          'jquery.js'         : 'jquery/dist/jquery.min.js',
-          'skel.js'           : 'skel/dist/skel.min.js',
-          'skel-layout.js'    : 'skel/dist/skel-layout.min.js',
-          'skel-viewport.js'  : 'skel/dist/skel-viewport.min.js'
+          'dist/js/jquery.js'         : 'jquery/dist/jquery.min.js',
+          'dist/js/skel.js'           : 'skel/dist/skel.min.js',
+          'dist/js/skel-layout.js'    : 'skel/dist/skel-layout.min.js',
+          'dist/js/skel-viewport.js'  : 'skel/dist/skel-viewport.min.js',
+          'app/sass/_skel.scss'       : 'skel/dist/_skel.scss'
         }
       }
     },
@@ -72,5 +66,5 @@ module.exports = function ( grunt )
   grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-bowercopy');
 
-  grunt.registerTask('default', ['coffee', 'sass', 'jade', 'bowercopy', 'watch']);
+  grunt.registerTask('default', [ 'bowercopy', 'coffee', 'sass', 'jade', 'watch']);
 }
