@@ -3,6 +3,12 @@ This project uses Jade, Sass and CoffeeScript.
 
 This project is used internally for new web projects. This project is free for anyone to use
 
+## To set up a new project
+1. Pull the repository to your local machine
+2. run `npm install`
+3. run `bower install`
+4. run `sudo grunt`
+
 
 
 ### What is skel?
